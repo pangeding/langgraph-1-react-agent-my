@@ -16,8 +16,30 @@ uv sync
 
 ## Usage
 
+### Traditional Usage
+
 ```bash
-uv run <your-script.py>
+python src/main.py
+```
+
+### Development with LangGraph Studio
+
+Install langgraph-cli:
+```bash
+uv pip install -U langgraph-cli
+```
+删除 uv.lock 重新 uv sync
+Start development server:
+```bash
+langgraph dev
+```
+
+Then open your browser and visit: `http://localhost:54367`
+
+You can also specify a custom port or enable hot-reload:
+```bash
+langgraph dev --port 8000
+langgraph dev --reload
 ```
 
 ## Dependencies

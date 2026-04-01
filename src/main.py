@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 
 from langchain_core.messages import HumanMessage
 
-from graph import graph
-from constant import LAST
+from src.graph import graph
+from src.constant import LAST
 # 加载 .env 文件（从当前文件所在目录）
 load_dotenv()
 

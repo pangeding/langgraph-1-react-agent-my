@@ -6,3 +6,4 @@
 
 *.pyc
 
+.langgraph_api/
